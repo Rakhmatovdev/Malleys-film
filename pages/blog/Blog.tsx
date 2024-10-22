@@ -7,7 +7,7 @@ import Image from "next/image";
 const BlogUI = () => {
   return (
     <div className="Gradient">
-      <div className="mt-10 sm:mt-24 text-white wrapper  pb-[145px]">
+      <div className="pt-10 sm:pt-24 text-white wrapper  pb-[145px]">
         <div className="">
           <p className="sm:text-[18px] font-bold">Sunday, 1 Jan 2023</p>
           <p className="text-red-500 font-bold text-2xl tracking-wide  sm:text-[48px] mt-6 w-[300px] sm:w-full">Bill Walsh leadership lessons</p>
@@ -54,5 +54,8 @@ const BlogUI = () => {
     </div>
   );
 };
+
+
+
 
 export default BlogUI;
