@@ -62,12 +62,12 @@ import Blog4 from "@/public/images/Blog4.png"
   ];
 
   const NavLinks = [
-    { title: "Home", path: "/" },
-    { title: "Portfolio", path: "/portfolio" },
-    { title: "Services", path: "/services" },
-    { title: "About", path: "/about" },
-    { title: "Contact", path: "/contact" },
-    { title: "Blog", path: "/blog" },
+    { title: "Home", path: "/pages" },
+    { title: "Portfolio", path: "/pages/portfolio" },
+    { title: "Services", path: "/pages/services" },
+    { title: "About", path: "/pages/about" },
+    { title: "Contact", path: "/pages/contact" },
+    { title: "Blog", path: "/pages/blog" },
   ];
    
 const BlogData=[
