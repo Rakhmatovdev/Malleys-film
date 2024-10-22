@@ -2,6 +2,10 @@ import Service1 from "@/public/Service1.png";
 import Service2 from "@/public/Service2.png";
 import Service3 from "@/public/Service3.png";
 import Service4 from "@/public/Service4.png";
+import Blog1 from "@/public/images/Blog1.png"
+import Blog2 from "@/public/images/Blog2.png"
+import Blog3 from "@/public/images/Blog3.png"
+import Blog4 from "@/public/images/Blog4.png"
 
  const  ServicesFooter=[
     {id:"1",path:"/",title:"Email marketing"},
@@ -66,6 +70,15 @@ import Service4 from "@/public/Service4.png";
     { title: "Blog", path: "/blog" },
   ];
    
+const BlogData=[
+  {id:1,image:Blog1.src,createdAt:"Sunday , 1 Jan 2023",title:"Bill Walsh leadership lessons",description:"Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?",skils:["Leadership","Management","Presentation"]},
+  {id:2,image:Blog2.src,createdAt:"Sunday , 1 Jan 2023",title:"Bill Walsh leadership lessons",description:"Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?",skils:["Leadership","Management","Presentation"]},
+  {id:3,image:Blog3.src,createdAt:"Sunday , 1 Jan 2023",title:"Bill Walsh leadership lessons",description:"Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?",skils:["Leadership","Management","Presentation"]},
+  {id:4,image:Blog4.src,createdAt:"Sunday , 1 Jan 2023",title:"Bill Walsh leadership lessons",description:"Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?",skils:["Leadership","Management","Presentation"]},
+  {id:5,image:Blog1.src,createdAt:"Sunday , 1 Jan 2023",title:"Bill Walsh leadership lessons",description:"Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?",skils:["Leadership","Management","Presentation"]},
+  {id:6,image:Blog2.src,createdAt:"Sunday , 1 Jan 2023",title:"Bill Walsh leadership lessons",description:"Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?",skils:["Leadership","Management","Presentation"]},
+  {id:7,image:Blog3.src,createdAt:"Sunday , 1 Jan 2023",title:"Bill Walsh leadership lessons",description:"Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?",skils:["Leadership","Management","Presentation"]},
+  {id:8,image:Blog4.src,createdAt:"Sunday , 1 Jan 2023",title:"Bill Walsh leadership lessons",description:"Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?",skils:["Leadership","Management","Presentation"]},
+]
 
-
-  export  {NavLinks,ServicesFooter,AboutFooter,HelpsFooter,Services}
+  export  {NavLinks,ServicesFooter,AboutFooter,HelpsFooter,Services,BlogData}
