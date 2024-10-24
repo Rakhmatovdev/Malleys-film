@@ -62,7 +62,7 @@ import Blog4 from "@/public/images/Blog4.png"
   ];
 
   const NavLinks = [
-    { title: "Home", path: "/pages" },
+    { title: "Home", path: "/" },
     { title: "Portfolio", path: "/pages/portfolio" },
     { title: "Services", path: "/pages/services" },
     { title: "About", path: "/pages/about" },

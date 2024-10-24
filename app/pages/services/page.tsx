@@ -1,4 +1,5 @@
 import ServicesUI from '@/pages/servicesui/Services'
 import SEO from '../../seo'
-const Services = () =><><SEO/> <ServicesUI/></>
+import Navbar from '@/pages/rootapp/Navbar'
+const Services = () =><><SEO/><Navbar/> <ServicesUI/></>
 export default Services

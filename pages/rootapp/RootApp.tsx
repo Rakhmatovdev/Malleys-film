@@ -1,11 +1,11 @@
 "use client";
 
-import Footer from "./Footer";
-import Navbar from "./Navbar";
-import { Toaster } from "react-hot-toast";
+import StoreProvider from "@/app/pages/StoreProvider";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import StoreProvider from "@/app/pages/StoreProvider";
+import { Toaster } from "react-hot-toast";
+import Footer from "./Footer";
+import Navbar from "./Navbar";
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {

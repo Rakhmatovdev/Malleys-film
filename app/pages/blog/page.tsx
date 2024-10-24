@@ -1,4 +1,5 @@
 import BlogUI from '@/pages/blog/Blog';
 import SEO from '../../seo';
-const Blog = () =><><SEO/><BlogUI /></>
+import Navbar from '@/pages/rootapp/Navbar';
+const Blog = () =><><SEO/><Navbar/><BlogUI /></>
 export default Blog

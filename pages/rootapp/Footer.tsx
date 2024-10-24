@@ -56,7 +56,7 @@ const Footer = () => {
          </Link>)}
          </ul>
       </div>
-      <div className="help xl:pr-32  mt-4  w-full sm:w-[200px] sm:mt-0 flex items-end justify-between ">
+      <div className="help xl:pr-32  mt-4 sm:mt-0  w-full sm:w-[200px] flex sm:items-start  items-end justify-between ">
      <ul className="flex flex-col w-[200px] gap-y-4">
       <li className="font-semibold">Help</li>
       {HelpsFooter.map(data=><Link key={data.id} href={data.path}>

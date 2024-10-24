@@ -1,4 +1,5 @@
 import ContactUI from "@/pages/contact/Contact";
 import SEO from "../../seo";
-const Contact= () =><><SEO/> <ContactUI/></>
+import Navbar from "@/pages/rootapp/Navbar";
+const Contact= () =><><SEO/><Navbar/> <ContactUI/></>
 export default Contact
