@@ -23,6 +23,11 @@
     @apply bg-gradient-to-t from-black via-[#304846]  to-[#304846];
   }
 }
+@layer components {
+  .linker {
+    @apply border-[2px]  border-black  px-[3px] rounded-lg  text-sm font-bold
+  }
+}
 
 /* :root {
   --background: #ffffff;
@@ -52,4 +57,12 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.zindex{
+  z-index: 1000;
+}
+
+.-zindex{
+  z-index: -1000;
 }

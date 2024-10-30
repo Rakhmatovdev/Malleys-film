@@ -7,7 +7,7 @@ const ServicesUI = () => {
  
   return (
     <div className="Gradient">
-      <div className="wrapper text-white pb-24 mt-10 sm:mt-[84px]">
+      <div className="wrapper text-white pb-24 pt-10 sm:pt-[84px]">
         <div className="flex gap-x-2 items-center">
           <Image className="w-2 h-4 sm:w-6 sm:h-12" src={ustun.src} width={24} height={46} alt="Ustun" />
           <p className="font-semibold sm:text-[40px]">Services</p>
@@ -37,7 +37,7 @@ const ServicesUI = () => {
         <div className="flex justify-center items-center mt-10 ">
         <div className="bg-white text-black py-[18px] px-10 rounded-xl flex justify-center items-center gap-x-2" >
           <p className="text-2xl">Book You Services</p>
-         <div className="border-[2px]  border-black  px-[4px] rounded-lg"><ArrowUpOutlined className="rotate-45 text-sm font-bold"/></div> 
+         <div className="linker"><ArrowUpOutlined className="rotate-45 "/></div> 
           </div></div>
       </div>
     </div>
