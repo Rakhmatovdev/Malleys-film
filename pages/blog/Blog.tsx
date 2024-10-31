@@ -38,13 +38,13 @@ const BlogUI = () => {
             <p className="mt-8 text-sm font-bold">{blog.createdAt}</p>
            <div className="mt-3 fij">
            <p className=" text-[20px] font-bold">{blog.title}</p>
-           <ArrowUpOutlined className="rotate-45 text-xl mt-2"/>
+           <ArrowUpOutlined className="rotate-45 text-xl mt-2 cursor-pointer"/>
            </div>
             <p className="mt-3 text-[#C0C5D0] w-[320px]">{blog.description}</p>
             <div className="mt-6 fij">
-              <p className="text-sm text-[#C94552] px-[14px] py-2 rounded-2xl bg-[#F9F5FF]">{blog.skils[0]}</p>
-              <p className="text-sm text-[#141414] px-[14px] py-2 rounded-2xl bg-[#F8F9FC]">{blog.skils[1]}</p>
-              <p className="text-sm text-[#185366] px-[14px] py-2 rounded-2xl bg-[#D9F6FF]">{blog.skils[2]}</p>
+              <p className="text-sm cursor-pointer text-[#C94552] px-[14px] py-2 rounded-2xl bg-[#F9F5FF]">{blog.skils[0]}</p>
+              <p className="text-sm cursor-pointer text-[#141414] px-[14px] py-2 rounded-2xl bg-[#F8F9FC]">{blog.skils[1]}</p>
+              <p className="text-sm cursor-pointer text-[#185366] px-[14px] py-2 rounded-2xl bg-[#D9F6FF]">{blog.skils[2]}</p>
             </div>
 
           </div>)}

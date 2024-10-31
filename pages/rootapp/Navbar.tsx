@@ -59,7 +59,7 @@ const Navbar = () => {
             className="flex "
             ref={ref}
           >
-            <div className="text-white">
+            <div className="text-white cursor-context-menu  ">
               {" "}
               <MenuOutlined />
             </div>

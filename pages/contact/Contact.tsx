@@ -42,9 +42,9 @@ const ContactUI = () => {
               </div>
             </div>
             <div className="flex sm:flex-col  sm:gap-y-6 gap-x-6 sm:gap-x-0 mt-[16px] sm:mt-0">
-              <FacebookOutlined className="bg-transparent border p-2 sm:p-3 text-2xl rounded-full " />
-              <InstagramOutlined className="border p-2 sm:p-3 text-2xl rounded-full" />
-              <TwitterOutlined className="border p-2 sm:p-3 text-2xl rounded-full" />
+              <FacebookOutlined className="cursor-pointer bg-transparent border p-2 sm:p-3 text-2xl rounded-full " />
+              <InstagramOutlined className="cursor-pointer border p-2 sm:p-3 text-2xl rounded-full" />
+              <TwitterOutlined className="cursor-pointer border p-2 sm:p-3 text-2xl rounded-full" />
             </div>
           </div>
           <div className="mt-6">

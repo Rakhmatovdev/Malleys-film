@@ -20,7 +20,7 @@ const Footer = () => {
     <div className=' text-white bg-gradient-to-t from-[#0C8386]  to-[#2F5A5B]'>
       <div className=" ">
    <div className=" pt-11 fij wrapper">
-    <div className="sm:ml-[151px]"><Image src={Logo.src} width={109} height={85} className="w-[55px] h-[43px] sm:w-[109px] sm:h-[85px]" alt='Logo'/></div>
+    <Link href={"/"} className="sm:ml-[151px]"><Image src={Logo.src} width={109} height={85} className="w-[55px] h-[43px] sm:w-[109px] sm:h-[85px] cursor-pointer" alt='Logo'/></Link>
     <div className="sm:fij gap-20">
       <p className="sm:text-[22px] text-sm text-center ">Ready to get started?</p>
       <button className='py-4 px-16 bg-red-400 text-white font-semibold text-sm sm:text-[17px] rounded-lg mt-2 sm:mt-0'>Get started</button>
@@ -64,9 +64,9 @@ const Footer = () => {
          </Link>)}
      </ul>
      <div className="gap-2 sm:hidden flex">
-        <FacebookOutlined />
-        <TwitterOutlined />
-        <InstagramOutlined />
+        <FacebookOutlined className={"cursor-pointer text-lg"} />
+        <TwitterOutlined className={"cursor-pointer text-lg"} />
+        <InstagramOutlined className={"cursor-pointer text-lg"} />
         </div>
       </div>
 
@@ -78,9 +78,9 @@ const Footer = () => {
           <p>Privacy Policy</p>
         </div>
         <div className="gap-2 hidden sm:flex">
-        <FacebookOutlined />
-        <TwitterOutlined />
-        <InstagramOutlined />
+        <FacebookOutlined className={"cursor-pointer text-xl"} />
+        <TwitterOutlined  className={"cursor-pointer text-xl"}/>
+        <InstagramOutlined className={"cursor-pointer text-xl"} />
         </div>
 
       </div>

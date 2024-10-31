@@ -22,7 +22,7 @@ const ServicesUI = () => {
                   <p className="text-lg">{service.title}</p>
                 </div>
                 <div className="border rounded-[8px] ">
-                <ArrowRightOutlined className="text-sm px-1 sm:px-1  " />
+                <ArrowRightOutlined className="text-sm px-1 sm:px-1 cursor-pointer " />
                 </div>
               </div>
              <div className="text-sm mt-2 font-light line-clamp-4 sm:line-clamp-none">
@@ -34,8 +34,8 @@ const ServicesUI = () => {
         <div className="">
           <p className="font-light text-xl tracking-wider mt-20 sm:mt-10 sm:text-center  ">Discover a premier online destination dedicated to videography excellence. Explore a wide range of services including Video Production, Editing, Motion Graphics, and more.</p>
         </div>
-        <div className="flex justify-center items-center mt-10 ">
-        <div className="bg-white text-black py-[18px] px-10 rounded-xl flex justify-center items-center gap-x-2" >
+        <div className="flex justify-center items-center mt-10  ">
+        <div className="bg-white text-black py-[18px] px-10 cursor-pointer rounded-xl flex justify-center items-center gap-x-2" >
           <p className="text-2xl">Book You Services</p>
          <div className="linker"><ArrowUpOutlined className="rotate-45 "/></div> 
           </div></div>

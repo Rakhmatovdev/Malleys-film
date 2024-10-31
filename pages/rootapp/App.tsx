@@ -101,7 +101,7 @@ const App = () => {
                                 />
                                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                                     <PlayCircleFilled
-                                        className="text-[50px]  sm:text-[54px]  md:text-[57px]  lg:text-[67px] opacity-80  "/>
+                                        className="cursor-pointer text-[50px]  sm:text-[54px]  md:text-[57px]  lg:text-[67px] opacity-80  "/>
                                 </div>
                                 <div className="absolute top-[70%] text-center w-full">
                                     <p className="text-[12px] sm:text-2xl ">{project.name}</p>
@@ -155,7 +155,7 @@ const App = () => {
                                     <div
                                         className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
                                         <PlayCircleFilled
-                                            className="sm:text-[40px] lg:text-[60px]  sm:mb-[20px] lg:mb-[44px]"/>
+                                            className="cursor-pointer sm:text-[40px] lg:text-[60px]  sm:mb-[20px] lg:mb-[44px]"/>
                                         <div className="flex flex-col  ">
                                             {" "}
                                             <p className="lg:text-[24px] lg:font-semibold ">
@@ -182,7 +182,7 @@ const App = () => {
                             />
                             <div
                                 className="absolute left-1/2 top-1/2 mt-6 -translate-x-1/2 -translate-y-1/2 text-center">
-                                <PlayCircleFilled className="text-[42px]  opacity-75"/>
+                                <PlayCircleFilled className="cursor-pointer text-[42px]  opacity-75"/>
                                 <div className="flex flex-col  ">
                                     <p className="text-[12px] w-40  mt-[26px]">
                                         We Create Excellence
@@ -399,8 +399,38 @@ const App = () => {
 
 
                     </div>
+                    <div className={"flex flex-col sm:hidden mt-[73px]"}>
+                        {Enginers.map((enginer) => (
+                            <div key={enginer.id} className={"relative h-[240px] flex justify-center  "}>
+                                <div
+                                    className={"absolute bg-[#050505] rounded-lg h-[206px]  w-[328px] items-center z-[10]  top-0 "}/>
+                                <Image className={"absolute z-20 -top-4 left-10"} src={enginer.image}
+                                       alt={enginer.name} width={128} height={221}/>
+                                <div className="absolute top-2 left-48 z-[11] ">
+                                    <div className="flex items-center gap-x-2 ">
+                                        <Rate
+                                            disabled
+                                            defaultValue={enginer.rating}
+                                            className="text-white text-[10px]"
+                                        />{" "}
+                                        <p className="text-[#EEC5C9] text-[10px]">
+                                            {enginer.rating}.0 rating
+                                        </p>
+                                    </div>
+                                    <p className="mt-2 text-[12px] w-[135px]">{enginer.desc}</p>
+                                    <p className="text-sm text-[#C94552] mt-2">
+                                        {enginer.name}
+                                    </p>
+                                    <p className="text-[12px] w-[138px] sm:w-full text-[#C94552]">
+                                        {enginer.profession}
+                                    </p>
+                                </div>
+                                <div className={"absolute  -right-2 -top-4 rounded-3xl bg-[#237772] w-[139px] h-[151px] z-[9]"}/>
+                                <div className={"absolute  -left-2 bottom-14  rounded-r-3xl bg-[#B6414D] w-[148px] h-[60px] z-[9]"}/>
+                            </div>))}
+                    </div>
 
-                    <div className="text-center mt-[29px]">
+                    <div className="text-center sm:mt-[29px]">
                         <p className="sm:text-[32px] text-lg">5.0 User Rating</p>
                         <Rate
                             defaultValue={5}
@@ -428,10 +458,10 @@ const App = () => {
                             <div className="flex gap-x-3">
 
                                     <LeftOutlined
-                                        className="swiper-button-prev w-8 h-8 sm:w-[45px] sm:h-[50px] bg-white text-red-500 flex justify-center items-center text-sm sm:text-3xl rounded-lg "/>
+                                        className="cursor-pointer swiper-button-prev w-8 h-8 sm:w-[45px] sm:h-[50px] bg-white text-red-500 flex justify-center items-center text-sm sm:text-3xl rounded-lg "/>
 
                                <RightOutlined
-                                        className="swiper-button-next w-8 h-8 sm:w-[45px] sm:h-[50px] bg-white text-red-500 flex justify-center items-center text-sm sm:text-3xl rounded-lg "/>
+                                        className="cursor-pointer swiper-button-next w-8 h-8 sm:w-[45px] sm:h-[50px] bg-white text-red-500 flex justify-center items-center text-sm sm:text-3xl rounded-lg "/>
 
                             </div>
                         </div>
@@ -469,7 +499,7 @@ const App = () => {
 
                                             <div className="mt-3 fij flex justify-between items-center">
                                                 <p className="text-[20px] font-bold">{blog.title}</p>
-                                                <ArrowUpOutlined className="rotate-45 text-xl mt-2"/>
+                                                <ArrowUpOutlined className="rotate-45 text-xl mt-2 cursor-pointer"/>
                                             </div>
 
                                             <p className="mt-3 text-[#C0C5D0] w-[320px]">
@@ -480,7 +510,7 @@ const App = () => {
                                                 {blog.skils.map((skill, index) => (
                                                     <p
                                                         key={index}
-                                                        className={`text-sm  p-2 rounded-2xl ${
+                                                        className={`text-sm  p-2 rounded-2xl cursor-pointer ${
                                                             index === 0
                                                                 ? "text-[#C94552] bg-[#F9F5FF]"
                                                                 : index === 1

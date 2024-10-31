@@ -48,7 +48,7 @@ const PortfolioR = () => {
             />
             <div className="absolute top-[50%] left-[50%] -translate-y-1/2 -translate-x-1/2">
               <Image
-                className="w-5 h-5 lg:w-[60px] lg:h-[60px]"
+                className="w-5 h-5 lg:w-[60px] lg:h-[60px] cursor-pointer"
                 src={play.src}
                 width={60}
                 height={60}
@@ -72,7 +72,7 @@ const PortfolioR = () => {
             />
             <div className="absolute top-[50%] left-[50%] -translate-y-1/2 -translate-x-1/2">
               <Image
-                className="w-5 h-5 lg:w-[60px] lg:h-[60px]"
+                className="cursor-pointer w-5 h-5 lg:w-[60px] lg:h-[60px]"
                 src={play.src}
                 width={60}
                 height={60}
@@ -96,7 +96,7 @@ const PortfolioR = () => {
             />
             <div className="absolute top-[50%] left-[50%] -translate-y-1/2 -translate-x-1/2">
               <Image
-                className="w-5 h-5 lg:w-[60px] lg:h-[60px]"
+                className="cursor-pointer w-5 h-5 lg:w-[60px] lg:h-[60px]"
                 src={play.src}
                 width={60}
                 height={60}
@@ -120,7 +120,7 @@ const PortfolioR = () => {
             />
             <div className="absolute top-[50%] left-[50%] -translate-y-1/2 -translate-x-1/2">
               <Image
-                className="w-5 h-5 lg:w-[60px] lg:h-[60px]"
+                className="cursor-pointer w-5 h-5 lg:w-[60px] lg:h-[60px]"
                 src={play.src}
                 width={60}
                 height={60}
@@ -146,7 +146,7 @@ const PortfolioR = () => {
             />
             <div className="absolute top-[50%] left-[50%] -translate-y-1/2 -translate-x-1/2">
               <Image
-                className="w-5 h-5 lg:w-[60px] lg:h-[60px]"
+                className="cursor-pointer w-5 h-5 lg:w-[60px] lg:h-[60px]"
                 src={play.src}
                 width={60}
                 height={60}
@@ -170,7 +170,7 @@ const PortfolioR = () => {
             />
             <div className="absolute top-[50%] left-[50%] -translate-y-1/2 -translate-x-1/2">
               <Image
-                className="w-5 h-5 lg:w-[60px] lg:h-[60px]"
+                className="cursor-pointer w-5 h-5 lg:w-[60px] lg:h-[60px]"
                 src={play.src}
                 width={60}
                 height={60}
@@ -194,7 +194,7 @@ const PortfolioR = () => {
             />
             <div className="absolute top-[50%] left-[50%] -translate-y-1/2 -translate-x-1/2">
               <Image
-                className="w-5 h-5 lg:w-[60px] lg:h-[60px]"
+                className="cursor-pointer w-5 h-5 lg:w-[60px] lg:h-[60px]"
                 src={play.src}
                 width={60}
                 height={60}
@@ -218,7 +218,7 @@ const PortfolioR = () => {
             />
             <div className="absolute top-[50%] left-[50%] -translate-y-1/2 -translate-x-1/2">
               <Image
-                className="w-5 h-5 lg:w-[60px] lg:h-[60px]"
+                className="cursor-pointer w-5 h-5 lg:w-[60px] lg:h-[60px]"
                 src={play.src}
                 width={60}
                 height={60}

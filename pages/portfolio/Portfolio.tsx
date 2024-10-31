@@ -45,7 +45,7 @@ const PortfolioUI = () => {
               />
               <div className="absolute top-[50%] left-[50%] -translate-y-1/2 -translate-x-1/2 hidden sm:block">
                 <Image
-                  className="w-5 h-5 lg:w-[60px] lg:h-[60px]"
+                  className="cursor-pointer w-5 h-5 lg:w-[60px] lg:h-[60px]"
                   src={play.src}
                   width={60}
                   height={60}

@@ -24,20 +24,19 @@ import Enginer1 from "@/public/images/Enginer1.png";
 import Enginer2 from "@/public/images/Enginer2.png";
 import Enginer3 from "@/public/images/Enginer3.png";
 import User1 from "@/public/images/User1.png"
-import User2 from "@/public/images/User2.png"
+import User2 from "@/public/images/User2.jpg"
 import User3 from "@/public/images/User3.png"
-import User4 from "@/public/images/User4.png"
-import User5 from "@/public/images/User5.png"
-import User6 from "@/public/images/User6.png"
+import User4 from "@/public/images/User7.png"
+import User5 from "@/public/images/User5.jpeg"
+import User6 from "@/public/images/User6.jpg"
 import User7 from "@/public/images/User7.png"
-import User8 from "@/public/images/User8.png"
-import User9 from "@/public/images/User9.png"
-import User10 from "@/public/images/User10.png"
-import User11 from "@/public/images/User11.png"
-import User12 from "@/public/images/User12.png"
-import User13 from "@/public/images/User13.png"
-import User14 from "@/public/images/User14.png"
-import User15 from "@/public/images/User15.png"
+import User8 from "@/public/images/User1.png"
+import User9 from "@/public/images/User2.jpg"
+import User10 from "@/public/images/User3.png"
+import User11 from "@/public/images/User7.png"
+import User12 from "@/public/images/User5.jpeg"
+import User13 from "@/public/images/User6.jpg"
+import User14 from "@/public/images/User7.png"
 
 
 
@@ -165,9 +164,9 @@ const Users=[
   {id:9,image:User9.src,name:"User9"},
   {id:10,image:User10.src,name:"User10"},
   {id:11,image:User11.src,name:"User11"},
-  {id:13,image:User13.src,name:"User13"},
-  {id:14,image:User14.src,name:"User14"},
-  {id:15,image:User15.src,name:"User15"}
+  {id:13,image:User12.src,name:"User12"},
+  {id:14,image:User13.src,name:"User13"},
+  {id:15,image:User14.src,name:"User14"}
 ]
 
   export  {NavLinks,ServicesFooter,AboutFooter,HelpsFooter,Services,BlogData,Ours,Bproject,AboutUsData,OurTeam,Enginers,Users}
