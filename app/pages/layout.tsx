@@ -5,10 +5,9 @@ export const metadata = {
 
 interface LayoutProps {
   children: React.ReactNode;
-  layoutType: 'layout1' | 'layout2';
 }
 
-const Layout: React.FC<LayoutProps> = ({ children, layoutType }) => {
+const Layout: React.FC<LayoutProps> = ({ children}) => {
   return (
     <>
       <div className="Gradient">
