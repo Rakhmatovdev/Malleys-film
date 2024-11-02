@@ -1,8 +1,5 @@
 import {Service1,Service2,Service3,Service4,Blog1,Blog2,Blog3,Blog4,Project1,Project2,Project3,Project4,Project5,About1,About2,About3,Team1,Team2,Team3,Team4,Team5,Team6,Enginer1,Enginer2,Enginer3,User1,User2,User3} from "../public"
 
-
-
-
  const  ServicesFooter=[
     {id:"1",path:"/",title:"Email marketing"},
     {id:"2",path:"/",title:"Campaigns"},

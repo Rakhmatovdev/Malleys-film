@@ -5,7 +5,7 @@ import {
   InstagramOutlined,
   TwitterOutlined,
 } from "@ant-design/icons";
-import BG from "../../public/Contact-Info.png";
+// import BG from "../../public/Contact-Info.png";
 import { useForm, SubmitHandler } from "react-hook-form";
 
 type Inputs = {
@@ -95,7 +95,7 @@ const ContactUI = () => {
       <div
         className="px-2 mt-12 sm:h-[421px] sm:mt-[129px] bg-center bg-cover"
         style={{
-          backgroundImage: `url(${BG.src})`,
+          // backgroundImage: `url(${BG.src})`,
          
         }}
       >

@@ -1,8 +1,9 @@
 "use client";
-import BGA from "@/public/images/About-bg.png";
-import BG from "@/public/images/bg-home.png";
-import logo from "@/public/Logo.svg";
-import ustun from "@/public/Vector.svg";
+// import BGA from "../../public/images/About-bg.png";
+// import BG from "../../public/images/bg-home.png";
+// import logo from "../../public/Logo.svg";
+// import ustun from "../../public/Vector.svg";
+
 import {
     AboutUsData,
     BlogData,
@@ -18,18 +19,18 @@ import {
     PlayCircleFilled,
     RightOutlined,
 } from "@ant-design/icons";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
-import {Swiper, SwiperSlide} from "swiper/react";
-import PortfolioR from "../portfolio/PortfolioR";
-import ServicesUI from "../servicesui/Services";
-import SwiperCore from "swiper/core";
+// import SwiperCore from "swiper/core";
 import "swiper/css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import ServicesUI from "../servicesui/Services";
 
-SwiperCore.use([Navigation, Pagination]);
+// SwiperCore.use([Navigation, Pagination]);
 
-import {Rate} from "antd";
-import {Navigation, Pagination} from "swiper/modules";
+import { Rate } from "antd";
+// import { Navigation, Pagination } from "swiper/modules";
+import PortfolioR from "../portfolio/PortfolioR";
 import Navbar from "./Navbar";
 
 const App = () => {
@@ -37,7 +38,7 @@ const App = () => {
         <>
             <section
                 className="h-[360px] w-screen sm:h-screen bg-cover bg-center relative"
-                style={{backgroundImage: `url(${BG.src})`}}
+                // style={{backgroundImage: `url(${BG.src})`}}
             >
                 <Navbar/>
                 <div className="text-white flex flex-col items-center justify-center w-full h-full">
@@ -70,7 +71,7 @@ const App = () => {
                         </div>
                     </div>
                     <div className="absolute bottom-1 sm:bottom-8 flex right-2 sm:right-8 gap-1 sm:gap-12 sm:leading-8">
-                        {Ours.map((user) => (
+                        {Ours?.map((user) => (
                             <div key={user.id} className="flex flex-col items-center ">
                                 <p className="text-[14px] sm:text-[32px] font-semibold ">
                                     +{user.count}
@@ -90,15 +91,15 @@ const App = () => {
                     </p>
                     <div
                         className="gap-x-4 sm:gap-x-[46px] mt-4 sm:mt-[52px] gap-y-2 sm:gap-y-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5  ">
-                        {Bproject.map((project) => (
+                        {Bproject?.map((project) => (
                             <div key={project.id} className="relative ">
-                                <Image
+                                {/* <Image
                                     className=""
                                     src={project.image}
                                     width={309}
                                     height={371}
                                     alt={project.name}
-                                />
+                                /> */}
                                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                                     <PlayCircleFilled
                                         className="cursor-pointer text-[50px]  sm:text-[54px]  md:text-[57px]  lg:text-[67px] opacity-80  "/>
@@ -118,17 +119,17 @@ const App = () => {
             <section className="Gradient  pt-[136px]">
                 <div
                     className="wrapper w-full h-[219px]  p-2 sm:h-[781px] rounded-3xl  sm:rounded-[40px] sm:p-[66px] flex flex-col justify-end text-white bg-cover bg-center"
-                    style={{backgroundImage: `url(${BGA.src})`}}
+                    // style={{backgroundImage: `url(${BGA.src})`}}
                 >
                     <div className="flex">
                         <div className=" h-full  w-[60%]">
-                            <Image
+                            {/* <Image
                                 className="sm:mx-5 w-[33px] h-[26px] sm:w-[153px] sm:h-[108px]"
-                                src={logo.src}
+                                // src={logo.src}
                                 width={153}
                                 height={108}
                                 alt=""
-                            />
+                            /> */}
                             <p className="text-base sm:text-[40px] text-[#C94552] tracking-wide sm:mt-8">
                                 About Us
                             </p>
@@ -143,15 +144,15 @@ const App = () => {
                             </p>
                         </div>
                         <div className="items-end gap-x-8 hidden sm:flex  ">
-                            {AboutUsData.map((data) => (
+                            {AboutUsData?.map((data) => (
                                 <div key={data.id} className="relative ">
-                                    <Image
+                                    {/* <Image
                                         className=""
                                         src={data.image}
                                         width={242}
                                         height={266}
                                         alt={data.name}
-                                    />
+                                    /> */}
                                     <div
                                         className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
                                         <PlayCircleFilled
@@ -171,15 +172,15 @@ const App = () => {
                 </div>
                 <div
                     className=" mt-[31px] items-end flex sm:hidden flex-wrap mx-auto gap-y-2 px-5 justify-between relative   ">
-                    {AboutUsData.map((data) => (
+                    {AboutUsData?.map((data) => (
                         <div key={data.id} className="relative text-white ">
-                            <Image
+                            {/* <Image
                                 className="rounded-2xl"
                                 src={data.image}
                                 width={156}
                                 height={154}
                                 alt={data.name}
-                            />
+                            /> */}
                             <div
                                 className="absolute left-1/2 top-1/2 mt-6 -translate-x-1/2 -translate-y-1/2 text-center">
                                 <PlayCircleFilled className="cursor-pointer text-[42px]  opacity-75"/>
@@ -196,13 +197,13 @@ const App = () => {
             <section className="Gradient -z-50">
                 <div className="text-white wrapper pt-10 sm:pt-[136px]">
                     <div className="flex items-center sm:justify-center gap-2 ">
-                        <Image
+                        {/* <Image
                             className="w-2 h-4 sm:w-6 sm:h-12"
                             src={ustun.src}
                             width={24}
                             height={48}
                             alt="Ustun"
-                        />
+                        /> */}
                         <p className="sm:text-[40px] font-semibold">Our Team</p>
                     </div>
                     <p className="mt-8 sm:text-[32px] font-medium tracking-wide sm:text-center line-clamp-4 sm:line-clamp-none">
@@ -219,19 +220,19 @@ const App = () => {
                                 className="w-[45px] h-[50px] bg-white text-red-500 flex justify-center items-center text-3xl rounded-lg "/>
                         </div>
                         <div className="pt-6 flex items-center  justify-between flex-wrap gap-y-4">
-                            {OurTeam.map((tuser) => (
+                            {OurTeam?.map((tuser) => (
                                 <div
                                     className="sm:rounded-xl rounded-2xl  w-[156px] h-[154px]  sm:w-[250px] sm:h-[328px] bg-center "
                                     key={tuser.id}
                                     style={{backgroundImage: `url(${tuser.image})`}}
                                 >
-                                    <Image
+                                    {/* <Image
                                         className="mt-[7px] ml-[14px] sm:mt-4 sm:ml-[22px] w-[9px] h-[15px] sm:w-[16px] sm:h-[32px]"
                                         src={ustun.src}
                                         width={16}
                                         height={32}
                                         alt="Ustun icon"
-                                    />
+                                    /> */}
                                     <p className="mt-[90px] text-sm sm:mt-[208px] ml-5 sm:text-2xl sm:tracking-wide ">
                                         {tuser.name}
                                     </p>
@@ -252,13 +253,13 @@ const App = () => {
                             <div
                                 className="absolute bg-[#050505] rounded-lg h-[206px] w-[470px] items-center z-[10] left-0 bottom-0"/>
                             <div className="absolute min-w-[160px] w-[160px] h-[250px] z-[11] left-[30px] bottom-0">
-                                <Image
+                                {/* <Image
                                     className="rounded-2xl object-cover"
                                     src={Enginers[0].image}
                                     width={160}
                                     height={250}
                                     alt="Enginer photo"
-                                />
+                                /> */}
                             </div>
                             <div className="absolute bottom-4 left-52 z-[11] ">
                                 <div className="flex items-center gap-x-2 ">
@@ -288,13 +289,13 @@ const App = () => {
                             <div
                                 className="absolute bg-[#050505] rounded-lg h-[206px] w-[470px] items-center z-[10] left-0 bottom-0"/>
                             <div className="absolute min-w-[160px] w-[160px] h-[250px] z-[11] left-[30px] bottom-0">
-                                <Image
+                                {/* <Image
                                     className="rounded-2xl object-cover"
                                     src={Enginers[1].image}
                                     width={160}
                                     height={250}
                                     alt="Enginer photo"
-                                />
+                                /> */}
                             </div>
                             <div className="absolute bottom-4 left-52 z-[11] ">
                                 <div className="flex items-center gap-x-2 ">
@@ -326,13 +327,13 @@ const App = () => {
                             <div
                                 className="absolute bg-[#050505] rounded-lg h-[206px] w-[470px] items-center z-[10] left-0 bottom-0"/>
                             <div className="absolute min-w-[160px] w-[160px] h-[250px] z-[11] left-[30px] bottom-0">
-                                <Image
+                                {/* <Image
                                     className="rounded-2xl object-cover"
                                     src={Enginers[2].image}
                                     width={160}
                                     height={250}
                                     alt="Enginer photo"
-                                />
+                                /> */}
                             </div>
                             <div className="absolute bottom-4 left-52 z-[11] ">
                                 <div className="flex items-center gap-x-2 ">
@@ -362,35 +363,35 @@ const App = () => {
                 {/*Reviews*/}
                 <div className="text-white wrapper">
                     <div className="flex items-center sm:justify-center gap-x-2 ">
-                        <Image className={'w-2 h-4 sm:w-6 sm:h-12'} src={ustun.src} width={24} height={48} alt="Ustun"/>
+                        {/* <Image className={'w-2 h-4 sm:w-6 sm:h-12'} src={ustun.src} width={24} height={48} alt="Ustun"/> */}
                         <p className="sm:text-[40px] font-semibold ">Reviews</p>
                     </div>
                     <p className="text-[18px] sm:text-center mt-4 sm:mt-10 tracking-wider">
                         Helping 500 creators take beautiful screenshots everyday...
                     </p>
                     <div className="hidden sm:flex justify-center items-center mt-6 gap-x-2">
-                        {Users.map((user) => (
+                        {Users?.map((user) => (
                             <div className="" key={user.id}>
-                                <Image
+                                {/* <Image
                                     className="rounded-full bg-white w-[48px] h-[48px] bg-center object-cover   "
                                     src={user.image}
                                     width={48}
                                     height={48}
                                     alt={user.name}
-                                />
+                                /> */}
                             </div>
                         ))}
                     </div>
                     <div className="flex sm:hidden justify-center items-center mt-6 gap-x-2">
-                        {Users.slice(0,4).map((user) => (
+                        {Users?.slice(0,4).map((user) => (
                             <div className="" key={user.id}>
-                                <Image
+                                {/* <Image
                                     className="rounded-full bg-white w-[48px] h-[48px] bg-center object-cover   "
                                     src={user.image}
                                     width={48}
                                     height={48}
                                     alt={user.name}
-                                />
+                                /> */}
                             </div>
                         ))}
                         <div className="rounded-full w-[48px] h-[48px] border-2 flex justify-center items-center cursor-pointer  ">
@@ -400,12 +401,12 @@ const App = () => {
 
                     </div>
                     <div className={"flex flex-col sm:hidden mt-[73px]"}>
-                        {Enginers.map((enginer) => (
+                        {Enginers?.map((enginer) => (
                             <div key={enginer.id} className={"relative h-[240px] flex justify-center  "}>
                                 <div
                                     className={"absolute bg-[#050505] rounded-lg h-[206px]  w-[328px] items-center z-[10]  top-0 "}/>
-                                <Image className={"absolute z-20 -top-4 left-10"} src={enginer.image}
-                                       alt={enginer.name} width={128} height={221}/>
+                                {/* <Image className={"absolute z-20 -top-4 left-10"} src={enginer.image}
+                                       alt={enginer.name} width={128} height={221}/> */}
                                 <div className="absolute top-2 left-48 z-[11] ">
                                     <div className="flex items-center gap-x-2 ">
                                         <Rate
@@ -445,13 +446,13 @@ const App = () => {
                     <div className="mt-10 sm:mt-[90px]">
                         <div className="flex items-center justify-between">
                             <div className="flex items-center gap-x-2">
-                                <Image
+                                {/* <Image
                                     className="w-2 h-4 sm:w-6 sm:h-12"
                                     src={ustun.src}
                                     width={24}
                                     height={46}
                                     alt="Blog section"
-                                />
+                                /> */}
                                 <p className="sm:text-[40px] font-bold tracking-wider">Blogs</p>
                             </div>
 
@@ -486,15 +487,15 @@ const App = () => {
                                 }}
                                 pagination={{clickable: true}}
                             >
-                                {BlogData.map((blog) => (
+                                {BlogData?.map((blog) => (
                                     <SwiperSlide key={blog.id}>
                                         <div>
-                                            <Image
+                                            {/* <Image
                                                 src={blog.image}
                                                 width={385}
                                                 height={240}
                                                 alt={blog.title}
-                                            />
+                                            /> */}
                                             <p className="mt-8 text-sm font-bold">{blog.createdAt}</p>
 
                                             <div className="mt-3 fij flex justify-between items-center">
@@ -507,7 +508,7 @@ const App = () => {
                                             </p>
 
                                             <div className="mt-6 fij flex gap-1  items-center">
-                                                {blog.skils.map((skill, index) => (
+                                                {blog?.skils.map((skill, index) => (
                                                     <p
                                                         key={index}
                                                         className={`text-sm  p-2 rounded-2xl cursor-pointer ${

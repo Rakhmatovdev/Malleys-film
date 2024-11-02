@@ -13,7 +13,7 @@ const ServicesUI = () => {
           <p className="font-semibold sm:text-[40px]">Services</p>
         </div>
         <div className="sm:mt-10 grid gap-x-[29px]  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
-          {Services.map((service)=><div className=" mt-4 sm:mt-0 bg-gradient-to-b from-[#132121] via-[#132121] to-[#124B5B]" key={service.id}>
+          {Services?.map((service)=><div className=" mt-4 sm:mt-0 bg-gradient-to-b from-[#132121] via-[#132121] to-[#124B5B]" key={service.id}>
              <Image src={service.image} width={410} height={499} alt="" />
              <div className="px-6 py-8">
               <div className="fij">

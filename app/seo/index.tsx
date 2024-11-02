@@ -67,7 +67,7 @@ const SEO = (props: SEOProps) => {
       <meta itemProp="image" content={image || ""} />
       <meta name="keywords" content={keywords || ""} />
       <link rel="icon" href="/favicon.ico" />
-      {socialTags(props).map(({ name, content }) => (
+      {socialTags(props)?.map(({ name, content }) => (
         <meta key={name} name={name} content={content} />
       ))}
     </Head>

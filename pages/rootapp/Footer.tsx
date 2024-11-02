@@ -1,5 +1,5 @@
 'use client'
-import Logo from "@/public/Logo.svg";
+// import Logo from "@/public/Logo.svg";
 import { AboutFooter, HelpsFooter, ServicesFooter } from "@/services/data";
 import { useForm, SubmitHandler } from "react-hook-form";
 import {
@@ -8,7 +8,7 @@ import {
   RightOutlined,
   TwitterOutlined
 } from '@ant-design/icons';
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from "next/link";
 import { Inputs } from "@/types/types";
 
@@ -20,7 +20,7 @@ const Footer = () => {
     <div className=' text-white bg-gradient-to-t from-[#0C8386]  to-[#2F5A5B]'>
       <div className=" ">
    <div className=" pt-11 fij wrapper">
-    <Link href={"/"} className="sm:ml-[151px]"><Image src={Logo.src} width={109} height={85} className="w-[55px] h-[43px] sm:w-[109px] sm:h-[85px] cursor-pointer" alt='Logo'/></Link>
+    {/* <Link href={"/"} className="sm:ml-[151px]"><Image src={Logo.src} width={109} height={85} className="w-[55px] h-[43px] sm:w-[109px] sm:h-[85px] cursor-pointer" alt='Logo'/></Link> */}
     <div className="sm:fij gap-20">
       <p className="sm:text-[22px] text-sm text-center ">Ready to get started?</p>
       <button className='py-4 px-16 bg-red-400 text-white font-semibold text-sm sm:text-[17px] rounded-lg mt-2 sm:mt-0'>Get started</button>
@@ -42,7 +42,7 @@ const Footer = () => {
       <div className="service">
        <ul className="flex flex-col gap-y-4  sm:mr-0">
         <li className="font-semibold">Services</li>
-         {ServicesFooter.map(data=><Link key={data.id} href={data.path}>
+         {ServicesFooter?.map(data=><Link key={data.id} href={data.path}>
          {data.title}
          </Link>)}
        </ul>
@@ -51,7 +51,7 @@ const Footer = () => {
       <div className="about">
          <ul className="flex flex-col gap-y-4">
           <li className="font-semibold">About</li>
-          {AboutFooter.map(data=><Link key={data.id} href={data.path}>
+          {AboutFooter?.map(data=><Link key={data.id} href={data.path}>
          {data.title}
          </Link>)}
          </ul>
@@ -59,7 +59,7 @@ const Footer = () => {
       <div className="help xl:pr-32  mt-4 sm:mt-0  w-full sm:w-[200px] flex sm:items-start  items-end justify-between ">
      <ul className="flex flex-col w-[200px] gap-y-4">
       <li className="font-semibold">Help</li>
-      {HelpsFooter.map(data=><Link key={data.id} href={data.path}>
+      {HelpsFooter?.map(data=><Link key={data.id} href={data.path}>
          {data.title}
          </Link>)}
      </ul>

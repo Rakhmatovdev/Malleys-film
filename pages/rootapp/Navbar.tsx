@@ -3,7 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { useDetectClickOutside } from "react-detect-click-outside";
-import logo from "/public/Logo.svg";
+import logo from "@/public/Logo.svg";
 import { MenuOutlined } from "@ant-design/icons";
 import Image from "next/image";
 import { NavLinks } from "@/services/data";
@@ -26,7 +26,7 @@ const Navbar = () => {
         </Link>
         <div className="flex items-center gap-28">
           <ul className="py-6 hidden md:flex gap-[46px] ">
-            {NavLinks.map((link) => {
+            {NavLinks?.map((link) => {
               return (
                 <li key={link.path}>
                   <Link
@@ -70,7 +70,7 @@ const Navbar = () => {
       {toggle && (
         <div className="absolute bg-black right-2 sm:top-24 z-50  md:hidden rounded-2xl w-[151px] h-[226px] ">
           <ul className="flex flex-col gap-2 px-6 py-4 ">
-            {NavLinks.map((link) => {
+            {NavLinks?.map((link) => {
               return (
                 <li key={link.path}>
                   <Link

@@ -2,7 +2,6 @@
 
 import StoreProvider from "@/app/pages/StoreProvider";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { Toaster } from "react-hot-toast";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
@@ -27,7 +26,7 @@ const RootApp = ({
             <main>{children}</main>
             <Footer />
           </div>
-          <ReactQueryDevtools initialIsOpen={false} />
+       
         </QueryClientProvider>
       </StoreProvider>
       <Toaster position="top-right" reverseOrder={false} />

@@ -1,8 +1,8 @@
-import Fimage from "@/public/images/Featured-Image.png";
-import ustun from '@/public/Vector.svg';
+// import Fimage from "@/public/images/Featured-Image.png";
+// import ustun from '@/public/Vector.svg';
 import { BlogData } from "@/services/data";
 import { ArrowUpOutlined } from "@ant-design/icons";
-import Image from "next/image";
+// import Image from "next/image";
 
 const BlogUI = () => {
   return (
@@ -25,16 +25,18 @@ const BlogUI = () => {
             ea commodo consequat. Duis aute irure dolor in reprehenderit in
             voluptate
           </p>
-          <div className="mt-5 sm:mt-[41px] sm:w-full sm:h-full  "><Image className="rounded-2xl bg-transparent bg-cover bg-center   sm:h-min " src={Fimage.src} height={645} width={1728} alt="Featured image Blog"/></div>
+          <div className="mt-5 sm:mt-[41px] sm:w-full sm:h-full  ">
+            {/* <Image className="rounded-2xl bg-transparent bg-cover bg-center   sm:h-min " src={Fimage.src} height={645} width={1728} alt="Featured image Blog"/> */}
+            </div>
         </div>
         <div className="mt-10 sm:mt-[90px]">
          <div className="flex items-center gap-x-2">
-          <Image className="w-2 h-4 sm:w-6 sm:h-12" src={ustun.src} width={24} height={46} alt="Blog section" />
+          {/* <Image className="w-2 h-4 sm:w-6 sm:h-12" src={ustun.src} width={24} height={46} alt="Blog section" /> */}
           <p className="sm:text-[40px] font-bold tracking-wider">Blogs</p>
          </div>
          <div className="pt-6 grid justify-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 sm:gap-x-10  md:gap-x-12 lg:gap-x-14 gap-y-[71px]">
-          {BlogData.map((blog)=><div key={blog.id} className="" >
-            <Image src={blog.image} width={385} height={240} alt={blog.title}/>
+          {BlogData?.map((blog)=><div key={blog.id} className="" >
+            {/* <Image src={blog.image} width={385} height={240} alt={blog.title}/> */}
             <p className="mt-8 text-sm font-bold">{blog.createdAt}</p>
            <div className="mt-3 fij">
            <p className=" text-[20px] font-bold">{blog.title}</p>
